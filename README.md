@@ -22,16 +22,16 @@ Extracted contigs could be used to assemble chromosome separately with the help 
 
 Clone the repository and install dependecies:
 
-`bash
+```bash
 git clone https://github.com/yourusername/contig-extractor.git
 pip3 install click && pip3 install pysam
-`
+```
 
 ## Usage
 
-`bash
+```bash
 chromosome_contig_extractor.py assembly.fasta reference.fasta alignment.bam --alignment-threshold 100000 --output-prefix human --output-dir separate_chromosome_contigs --include-chimeric
-`
+```
 
 This command will process the assembly and alignment files, creating separate FASTA files for each chromosome with the aligned contigs. Chimeric contigs will be included in the extracted contigs files and reported in a separate TSV file. The output files will be stored in the `separate_chromosome_contigs` directory with a prefix `human`.
 
