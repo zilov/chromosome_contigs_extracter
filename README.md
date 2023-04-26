@@ -2,6 +2,8 @@
 
 Chromosome Contig Extractor is a Python script that extracts contigs aligned to chromosomes of a reference genome from an assembly file. It creates separate FASTA files for each chromosome, containing the aligned contigs. The script also identifies and reports chimeric contigs, i.e., contigs that align to multiple chromosomes.
 
+Extracted contigs could be used to assemble chromosome separately with the help of HiC data. For example, you could use [hic_scaffolder](https://github.com/zilov/hic-scaffolder) to run [YaHS pipeline](https://github.com/c-zhou/yahs) and get [Juicer](https://github.com/aidenlab/juicer) .hic files for manual curation in [Juicebox](https://github.com/aidenlab/Juicebox).
+
 ## Features
 
 - Extract aligned contigs from assembly file and save them in separate FASTA files for each chromosome
