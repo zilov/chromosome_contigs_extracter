@@ -40,7 +40,7 @@ This command will process the assembly and alignment files, creating separate FA
 
 - `<assembly_file>`: Path to the assembly file in FASTA format
 - `<reference_file>`: Path to the reference genome file in FASTA format
-- `<alignment_file>`: Path to the alignment file in SAM/BAM format, could be generated with `minimap2 asm20 ref.fa asm.fa > aln.sam`
+- `<alignment_file>`: Path to the alignment file in SAM/BAM format, could be generated with `minimap2 -ax asm20 ref.fa asm.fa > aln.sam`
 - `<threshold>`: (Optional) Minimum alignment length to consider (default: 50000)
 - `<prefix>`: (Optional) Prefix for output file names (default: '')
 - `<dir>`: (Optional) Directory to store output files (default: 'output')
